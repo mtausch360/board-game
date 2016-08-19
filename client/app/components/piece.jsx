@@ -11,6 +11,7 @@ class Piece extends Component {
           type: 'SELECT_PIECE',
           id: this.props.piece.id
         })}>
+        <div className="inner-piece"></div>
         <div className="crown">{this.props.piece.king ? 'K' : ''}</div>
       </div>
     )

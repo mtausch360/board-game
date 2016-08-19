@@ -1,0 +1,106 @@
+@imort 
+//
+//variables and mixins
+//
+.black{
+    background-color: black;
+}
+.white{
+    background-color: white;
+}
+.blue {
+    background-color: blue;
+}
+.red {
+    background-color: red;
+}
+.closeShadow{
+    box-shadow: 1px 3px 5px #000;
+}
+.closeLightShadow {
+    box-shadow: 1px 2px 2px #545454;
+}
+@tileWidth: 80px;
+@tileHeight: 80px;
+@availableMoveColor: #31dae2;
+@availableMoveHover: #ffce19;
+@boardOutlineColor: #94723f;
+@boardOutlineWidth: 10;
+
+//
+// BOARD STYLES
+//
+.board-container {
+    width: unit((80*8 + @boardOutlineWidth * 2), px);
+    margin: 20px auto;
+    border: unit(@boardOutlineWidth,px) solid @boardOutlineColor;
+    border-radius: 5px;
+    .closeShadow;
+
+}
+
+.board-row{
+    height: @tileHeight;
+}
+.tile{
+    width: @tileWidth;
+    height: @tileHeight;
+    display: inline-block;
+    &.black{
+        background-color: green;
+    }
+}
+
+//
+//PIECE STYLES
+//
+//
+.piece {
+    z-index: 10;
+    border-radius: 50px;
+    width: 80px;
+    position:absolute;
+    height: 80px;
+    .closeLightShadow;
+    &.black{
+        background-color: #292929;
+    }
+    &:hover{
+        cursor: pointer;
+    }
+    &.selected {
+        border: 1px solid yellow;
+        box-shadow: 1px 1px 1px #ccc;
+    }
+    .crown {
+        color: white;
+        text-shadow: 1px 1px 1px #ccc;
+    }
+}
+
+.crown{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+//
+//TILE STYLES
+//
+.tile.selected {
+    border: 1px solid orange;
+}
+
+.move {
+    background-color: @availableMoveColor !important;
+    z-index: 11;
+    transition: background-color ease 500ms;
+    &:hover{
+        cursor: pointer;
+        background-color: @availableMoveHover !important;
+    }
+}
+.move:hover{
+    
+}

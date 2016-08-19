@@ -2,78 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Board Game</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .board-container {
-            width: 642px;
-            margin: 0 auto;
-        }
-        .tile{
-            width: 80px;
-            height: 80px;
-            display: inline-block;
-        }
-
-        .black{
-            background-color: black;
-        }
-        .white{
-            background-color: white;
-        }
-        .blue {
-            background-color: blue;
-        }
-        .red {
-            background-color: red;
-        }
-        .board-container{
-            border: 1px solid black;
-        }
-        .board-row{
-            height: 80px;
-        }
-        .piece {
-            z-index: 10;
-            border-radius: 50px;
-            width: 80px;
-            position:absolute;
-            height: 80px;
-        }
-        .piece:hover{
-            cursor: pointer;
-        }
-        .piece.selected {
-            border: 1px solid yellow;
-            box-shadow: 1px 1px 1px #ccc;
-        }
-        .crown{
-            margin-top: 25px;
-            text-align: center;
-            font-size: 20px;
-            font-weight: 400;
-        }
-        .piece > .crown {
-            color: white;
-            text-shadow: 1px 1px 1px #ccc;
-        }
-
-        .tile.selected {
-            border: 1px solid orange;
-        }
-
-        .move {
-            background-color: blue !important;
-            z-index: 11;
-        }
-        .move:hover{
-            cursor: hover;
-        }
-    </style>
 </head>
 <body>
-    <div id="container"></div>
+    <div id="container" class="container"></div>
     <script type="text/javascript" src="bundle.js"></script>
 </body>
 </html>

@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "animate.css": "^3.5.1",
     "immutable": "^3.8.1",
     "lodash": "^3.10.1",
     "react": "^15.3.0",
