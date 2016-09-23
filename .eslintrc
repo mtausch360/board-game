@@ -1,0 +1,44 @@
+{
+  "parser"  : "babel-eslint",
+  "extends" : [
+    "airbnb"
+  ],
+  "plugins" : [
+    "flow-vars"
+  ],
+  "env"     : {
+    "browser" : true
+  },
+  "globals" : {
+    "Action"       : false,
+    "__DEV__"      : false,
+    "__PROD__"     : false,
+    "__DEBUG__"    : false,
+    "__DEBUG_NEW_WINDOW__" : false,
+    "__BASENAME__" : false,
+    "Stripe": false
+  },
+  "rules": {
+    "react/jsx-curly-spacing": [0, "always"],
+    "semi": [0, "never"],
+    "space-infix-ops": 0,
+    "max-len": [2, 120, 2],
+    "flow-vars/define-flow-type": 1,
+    "flow-vars/use-flow-type": 1,
+
+    "no-unused-expressions": [2, { allowShortCircuit: true }],
+    "new-cap": [2, { "capIsNewExceptions": ["Record", "Map", "List", "Array"] }],
+
+    "prefer-template": 1,
+
+    "comma-dangle": [0, "never"],
+    "jsx-quotes": [0, "prefer-double"],
+    "template-curly-spacing": [0, "never"],
+    "dot-notation": 0,
+    "arrow-body-style": [0, "as-needed"],
+    "quotes": 0,
+    "array-bracket-spacing": [0, "always"],
+    "radix": 0,
+    "no-unused-vars": [2, {"args": "none"}]
+  }
+}

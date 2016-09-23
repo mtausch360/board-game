@@ -25,14 +25,14 @@ const config = {
       include: APP_DIR,
       loader: 'babel-loader',
       query: {
-        presets: ['es2015']
+        presets: ['react', 'es2015', 'stage-0']
       }
     }, {
       test: /\.js$/,
       include: APP_DIR,
       loader: 'babel-loader',
       query: {
-        presets: ['react', 'es2015']
+        presets: ['react', 'es2015', 'stage-0']
       }
     }, {
       test: /\.less$/,

@@ -1,6 +1,7 @@
-import React, {Component} from "react";
-import Board from './board';
-import Info from './info';
+import React, {Component} from "react"
+import Board from './board'
+import Info from './info'
+
 export default class App extends Component{
   render(){
     return (
@@ -8,7 +9,7 @@ export default class App extends Component{
         <Info />
         <Board />
       </div>
-    );
+    )
   }
 }
 
